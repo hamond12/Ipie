@@ -34,6 +34,30 @@ section {
     background-color: lightgray;
 }
 
+table{
+	margin:0 auto;
+}
+
+#padding{
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#p_phone{
+	padding-left:40px;
+	padding-right:40px;
+}
+
+#p_address{
+	padding-left:100px;
+	padding-right:100px;
+}
+
+#padding2{
+	padding-left:10px;
+	padding-right:10px;
+}
+
 footer {
     position:fixed;
     bottom:0px;
@@ -45,4 +69,3 @@ footer {
     line-height:30px;
     font-size:15px;
 }
-
