@@ -11,7 +11,7 @@
 <jsp:include page="header.jsp" />
 <section>
     <h1>쇼핑몰 회원관리 프로그램</h1><br>
-    <p>
+    <p style="margin-left:20px;">
         쇼핑몰 회원정보와 회원매출 정보 데이터베이스를 구축하고 회원관리 프로그램을 작성하는 프로그램이다.<br>
         프로그램 작성 순서<br>
         1. 회원정보 테이블을 작성한다.<br>
