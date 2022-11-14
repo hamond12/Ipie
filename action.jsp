@@ -9,7 +9,8 @@
 <body>
 <%
 request.setCharacterEncoding("UTF-8");
-String mode = request.getParameter("mode");
+
+String mode=request.getParameter("mode");
 String custno = request.getParameter("custno");
 String custname = request.getParameter("custname");
 String phone = request.getParameter("phone");
@@ -17,15 +18,16 @@ String address = request.getParameter("address");
 String joindate = request.getParameter("joindate");
 String grade = request.getParameter("grade");
 String city = request.getParameter("city");
+
 try{
 	Connection con = Util.getConnection();
-	String sql = "";
+	String sql="";
 	switch(mode){
 	case "insert":
 		sql="insert into member_tbl_02 values(?,?,?,?,to_date(?,'yyyy-mm-dd'),?,?)";
 		
 		PreparedStatement pstmt = con.prepareStatement(sql);
-		pstmt.setString(1, custno);
+		pstmt.setString(1,custno);
 		pstmt.setString(2, custname);
 		pstmt.setString(3, phone);
 		pstmt.setString(4, address);
@@ -38,10 +40,12 @@ try{
 <jsp:forward page="join.jsp"></jsp:forward>
 <%
 		break;
+
 	case "modify":
-		sql = "update member_tbl_02 set custname=?, phone=?, address=?, joindate=to_date(?,'yyyy-mm-dd'), grade=?, city=?, where custno=?";
+		sql="update member_tbl_02 set custname=?, phone=?, address=?, joindate=to_date(?,'yyyy-mm-dd'),grade=?,city=? where custno=?";
 		
 		pstmt = con.prepareStatement(sql);
+		
 		pstmt.setString(1, custname);
 		pstmt.setString(2, phone);
 		pstmt.setString(3, address);
