@@ -42,7 +42,7 @@
     			}
     	%>
     		<tr>
-    			<td style="text-align:center"><%=rs.getString("custno") %></td>
+    			<td style="text-align:center"> <a href="modify.jsp?custno=<%=rs.getString("custno") %>"><%=rs.getString("custno") %> </a></td>
     			<td style="text-align:center"><%=rs.getString("custname") %></td>
     			<td style="text-align:center"><%=rs.getString("phone") %></td>
     			<td style="text-align:center"><%=rs.getString("address") %></td>
