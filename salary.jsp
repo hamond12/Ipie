@@ -13,10 +13,10 @@
 <h1>회원매출조회</h1>
 <table border=1>
 <tr>
-	<th style="width:40%">회원번호</th>
-	<th style="width:30%">회원성명</th>
-	<th style="width:30%">고객등급</th>
-	<th style="width:30%">매출</th>
+	<th style="width:100px;">회원번호</th>
+	<th style="width:90px;">회원성명</th>
+	<th style="width:120px;">고객등급</th>
+	<th style="width:110px;">매출</th>
 </tr>
 <%
 request.setCharacterEncoding("UTF-8");
