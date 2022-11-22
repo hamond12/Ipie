@@ -1,0 +1,47 @@
+create table TBL_ARTIST_201905(
+	ARTIST_ID CHAR(4) NOT NULL, 
+	ARTIST_NAME VARCHAR2(20),
+	BIRTH CHAR(8),
+	GENDER CHAR(1),
+	TALENT CHAR(1),
+	AGENCY VARCHAR2(30),
+	PRIMARY KEY(ARTIST_ID)
+);
+
+insert into TBL_ARTIST_201905 values('AA01','김스타','19970101','F','1','A엔터테이먼트');
+insert into TBL_ARTIST_201905 values('AA02','조스타','19980201','M','2','B엔터테이먼트');
+insert into TBL_ARTIST_201905 values('AA03','왕스타','19990301','M','3','C엔터테이먼트');
+insert into TBL_ARTIST_201905 values('AA04','정스타','20000401','M','1','D엔터테이먼트');
+insert into TBL_ARTIST_201905 values('AA05','홍스타','20010501','F','2','E엔터테이먼트');
+
+create table TBL_MENTO_201905(
+	MENTO_ID CHAR(4) NOT NULL,
+	MENTO_NAME VARCHAR2(20),
+	PRIMARY KEY(MENTO_ID)
+);
+
+insert into TBL_MENTO_201905 values('J001','함멘토');
+insert into TBL_MENTO_201905 values('J002','박멘토');
+insert into TBL_MENTO_201905 values('J003','장멘토');
+
+
+//
+create table TBL_POINT_201905(
+	SERIAL_NO NUMBER(8) NOT NULL,
+	ARTIST_ID CHAR(4),
+	MENTO_ID CHAR(4),
+	SCORE NUMBER(3),
+	PRIMARY KEY(SERIAL_NO),
+	FOREIGN KEY(ARTIST_ID) references TBL_ARTIST_201905(ARTIST_ID),
+	FOREIGN KEY(MENTO_ID) references TBL_MENTO_201905(MENTO_ID) 
+);
+
+insert into TBL_POINT_201905 values(2019001, 'AA01', 'J001', 78);
+insert into TBL_POINT_201905 values(2019002, 'AA01', 'J002', 76);
+insert into TBL_POINT_201905 values(2019003, 'AA01', 'J003', 70);
+insert into TBL_POINT_201905 values(2019004, 'AA02', 'J001', 80);
+insert into TBL_POINT_201905 values(2019005, 'AA02', 'J002', 72);
+insert into TBL_POINT_201905 values(2019006, 'AA02', 'J003', 78);
+insert into TBL_POINT_201905 values(2019007, 'AA03', 'J001', 90);
+insert into TBL_POINT_201905 values(2019008, 'AA03', 'J002', 92);
+insert into TBL_POINT_201905 values(2019009, 'AA03', 'J003', 88);
