@@ -1,0 +1,74 @@
+header{
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:120px;
+	line-height:120px;
+	font-size:30px;
+	text-align:center;
+	background-color:blue;
+	color:white;
+}
+
+nav{
+	position:fixed;
+	top:120px;
+	width:100%;
+	height:30px;
+	line-height:30px;
+	background-color:lightblue;
+	word-spacing:15px;
+}
+
+a{
+	text-decoration:none;
+}
+
+section{
+	position:fixed;
+	top:150px;
+	width:100%;
+	height:100%;
+	background-color:lightgray;
+	
+}
+
+h1{
+	text-align:center;
+}
+
+table{
+	margin:0 auto;
+}
+
+table, th, td{
+	border: 1px solid #333;
+	border-collapse: collapse;
+}
+
+input, select{
+	width:40%;
+	margin-left:2px;
+}
+
+button{
+	font-size:12px;
+	margin-top: 3px;
+	margin-bottom: 3px; 
+	border:none;
+	border-radius:3px;
+	background:white;
+}
+
+footer{
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	text-align:center;
+	background-color:blue;
+	color:white;
+		
+}
