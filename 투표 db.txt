@@ -1,0 +1,36 @@
+create table TBL_VOTE_202005
+(
+	v_jumin char(13) NOT NULL PRIMARY KEY,
+	v_name varchar2(20),
+	m_no char(1),
+	v_time char(4),
+	v_area char(20),
+	v_confirm char(1)
+);
+
+insert into TBL_VOTE_202005 values();
+
+create table TBL_MEMBER_202005
+(
+	m_no char(1) NOT NULL PRIMARY KEY,
+	m_name varchar2(20),
+	p_code char(2),
+	p_school char(1),
+	m_jumin char(13),
+	m_city varchar2(20)
+);
+
+insert into TBL_MEMBER_202005 values();
+
+create table TBL_PARTY_202005
+(
+	p_code char(2),
+	p_name varchar2(20),
+	p_indate date,
+	p_reader varchar2(20),
+	p_tel1 char(3),
+	p_tel2 char(4),
+	p_tel3 char(4)
+);
+
+insert into TBL_PARTY_202005 values();
