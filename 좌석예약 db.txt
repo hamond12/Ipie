@@ -54,6 +54,4 @@ insert into TBl_RESV_202108 values('20210008', '1001', '20211006', 'S008');
 insert into TBl_RESV_202108 values('20210009', '1002', '20211006', 'S002');
 insert into TBl_RESV_202108 values('20210010', '1003', '20211006', 'S003');
 
-select Empno, Empname, Deptcode, Position from TBL_EMP_202108;
-
 commit;
