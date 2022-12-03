@@ -28,3 +28,13 @@ function res(){
 	alert("정보를 지우고 처음부터 다시 입력합니다!");
 	frm.reset();
 }
+
+function search(){
+	if(frm2.Empno.value===""){
+		alert("사원번호가 입력되지 않았습니다");
+		frm2.Empno.focus();
+		return false;
+	}
+	frm2.submit();
+	return true;
+}
