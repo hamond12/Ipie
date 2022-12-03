@@ -13,6 +13,7 @@
 <section>
 	<h1>근무좌석예약</h1>
 	<form method="post" action="action.jsp" name="frm">
+	<input type="hidden" name="mode" value="insert">
 	<table border="1">
 		<tr>
 			<td>예약번호</td>
