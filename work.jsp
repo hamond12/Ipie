@@ -23,7 +23,7 @@
 	try{
 		Connection con = Util.getConnection();
 		Statement stmt = con.createStatement();
-		String sql="select Empno, Empname, Deptcode, Position from TBL_EMP_202108 order by Deptcode";
+		String sql="select E.Empno, Empname, Deptcode, count(Resvno) from TBL_EMP_202108 E, TBL_RESV_202108 R where E.Empno=R.Empno group by E.Empno, Empname, Deptcode order by Deptcode ASC";
 		ResultSet rs = stmt.executeQuery(sql);
 		while(rs.next()){
 			int deptno=rs.getInt(3);
